@@ -5,4 +5,5 @@ FROM ANIMAL_INS
 WHERE upper(NAME) like upper('%EL%')
 ORDER BY NAME
 
+WHERE NAME LIKE "%EL%"
 수정중..
