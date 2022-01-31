@@ -9,3 +9,5 @@ OR NAME LIKE '%Pickle%'
 OR NAME LIKE '%Rogan%'
 OR NAME LIKE '%Sabrina%'
 OR NAME LIKE '%Mitty%'
+
+WHERE NAME LIKE IN ( Lucy , Ella , Pickle, Rogan, Sabrina )
