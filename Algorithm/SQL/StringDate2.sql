@@ -4,6 +4,16 @@ Q.보호소의 동물이 중성화되었는지 아닌지 파악하려 합니다.
 이때 중성화가 되어있다면 'O', 아니라면 'X'라고 표시해주세요.
 
 A. -- 코드를 입력하세요
+Answer
+-- 코드를 입력하세요
+SELECT ANIMAL_ID, NAME, 
+CASE SEX_UPON_INTAKE WHEN 'Neutered Male' THEN 'O'
+WHEN 'Spayed Female' THEN 'O'
+ELSE 'X' END AS 중성화
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID
+
+Wrong Answer
 SELECT ANIMAL_ID, NAME, 
 CASE WHEN SEX_UPON_INTAKE = 'Neutered Male' THEN 'O'
 WHEN SEX_UPON_INTAKE = 'Spayed Male' THEN 'O'
@@ -11,4 +21,4 @@ ELSE 'X' END AS 중성화
 FROM ANIMAL_INS
 ORDER BY ANIMAL_ID
 
-수정중
+
