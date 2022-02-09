@@ -3,6 +3,14 @@ Q. 입양을 간 동물 중, 보호 기간이 가장 길었던 동물 두 마리
 
 A. -- 코드를 입력하세요
 -- 코드를 입력하세요
+Answer
+SELECT I.ANIMAL_ID, I.NAME
+FROM ANIMAL_INS I, ANIMAL_OUTS O
+WHERE I.ANIMAL_ID = O.ANIMAL_ID
+ORDER BY O.DATETIME - I.DATETIME DESC
+LIMIT 0,2
+Wrong Answer
+-- 코드를 입력하세요
 SELECT ANIMAL_ID,NAME
 FROM ANIMAL_INS
 ORDER BY DATETIME 
