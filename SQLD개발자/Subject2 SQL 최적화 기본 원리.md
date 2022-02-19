@@ -1,12 +1,12 @@
 ### 실행계획 정보의 구성요소 
 Exception plan  
 실행계획을 읽는 순서는 위에서 아래로, 안에서 밖으로 읽는다.
-> SELECT STATEMENT Optimizer = ALL_ROWs (Cost=3, Card=2, Bytes=114)   
-> NESTED LOOPS (Cost=3 Card=2, Bytes=114) 
-> TABLE ACCESS (BY INDEX ROWID)  OF 'EMP' (TABLE) (Cost=2 Card=2 Bytes=74)
-> INDEX (RANGE SCAN) OF 'EMP' (Cost=1 Card=2)
-> TABLE ACCESS (BY INDEX ROWID) OF 'EMP' (TABLE) (Cost=1 Card=1 Butes=20) 
-> INDEX (UNIQUE SCAN) OF 'PK_DEPT' (INDEX (UNIQE)) (Cost=0 Card=1)
+> SELECT STATEMENT Optimizer = ALL_ROWs (Cost=3, Card=2, Bytes=114)     
+> NESTED LOOPS (Cost=3 Card=2, Bytes=114)   
+> TABLE ACCESS (BY INDEX ROWID)  OF 'EMP' (TABLE) (Cost=2 Card=2 Bytes=74)  
+> INDEX (RANGE SCAN) OF 'EMP' (Cost=1 Card=2)  
+> TABLE ACCESS (BY INDEX ROWID) OF 'EMP' (TABLE) (Cost=1 Card=1 Butes=20)   
+> INDEX (UNIQUE SCAN) OF 'PK_DEPT' (INDEX (UNIQE)) (Cost=0 Card=1)  
     
 다음 중 실행계획을 통해서 알 수 있는 정보로 가장 부적절한 것은? (밑에 다 올바른 답)  
 NESTED LOOPS : 조인 기법  
