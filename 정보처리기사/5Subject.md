@@ -17,3 +17,7 @@
   * 확립(Established)
   * 예측(Predictable)
   * 최적화(Optimizing)
+
+### SW관련 신기술
+* 분산 원장 기술 (DCT:Distributed Ledger Technologh) : 중앙 관리자나 중앙 데이터 저장소가 존재하지 않고 P2P 망 내의 참여자들에게 모든 거래 목록이 분산 저장되어 거래가 발생할 때마다 지속적으로 갱신되는 디지털 원장을 의미한다.
+* 양자 암호키 분배 (QKD: Quantum Key Distribution) : 양자 통신을 위해 비밀키를 분배하여 괸리하는 기술, 얽힘(Entanglement) 상태 광자 또는 단일 광자를 이용하는 방법 
