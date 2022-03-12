@@ -20,30 +20,30 @@
   
 <객관식>
 1,2,4,8,7,11,12,13,17,18,19,20,22,32
-7. 데이터 범위 지정 : 도메인
-8. 식별자 특징 중 틀린 것 : 독립성 X
-9. 속성 알맞은 것 고르기 : 설계속성
-10. smith, allen, scott like : 4개
-11. joins, smith
-12. grant  Grant select,update on user_A.tb to user_b
-13. jones, smith
-14. grant로 권한 줄 수 없는 것 : check X
-15. truncate 후 rollback 문제 : 30 
-16. numberic Varchar X
-17. 누적 백분율 구하는 키워드 : cume_dist X
-18. DML - rename
-19. 2,2
-20. 4,23
-21. order by 선수명 asc, 팀명 asc, 3 desc
-22. drop과 truncate에 대한 설명중 틀린 것 : truncate은 dml이다. X
-23. (col1, col2) in ( (a,1005) ) : 행1개 
-24. order slibings by 선지 X
-25. 4000,3000, 5000, 12000, 4,3 X
-26. order by 3 
-27. insert 입력시 오류 - 날짜를 숫자형태로 20220321
-28. order by : alias 와 컬럼 넘버 사용 불가능
-29. grouping set 순서 영향 있다는 선지 X
-30. 주식별자, 기본속성 없어도 된다는 선지 
-31. 단일행 = 다중행 X
+7. 데이터 범위 지정 : 도메인  
+9. 식별자 특징 중 틀린 것 : 독립성 X
+11. 속성 알맞은 것 고르기 : 설계속성
+12. smith, allen, scott like : 4개
+13. joins, smith
+14. grant  Grant select,update on user_A.tb to user_b
+15. jones, smith
+16. grant로 권한 줄 수 없는 것 : check X
+17. truncate 후 rollback 문제 : 30 
+18. numberic Varchar X
+19. 누적 백분율 구하는 키워드 : cume_dist X
+20. DML - rename
+21. 2,2
+22. 4,23
+23. order by 선수명 asc, 팀명 asc, 3 desc
+24. drop과 truncate에 대한 설명중 틀린 것 : truncate은 dml이다. X
+25. (col1, col2) in ( (a,1005) ) : 행1개 
+26. order slibings by 선지 X
+27. 4000,3000, 5000, 12000, 4,3 X
+28. order by 3 
+29. insert 입력시 오류 - 날짜를 숫자형태로 20220321
+30. order by : alias 와 컬럼 넘버 사용 불가능
+31. grouping set 순서 영향 있다는 선지 X
+32. 주식별자, 기본속성 없어도 된다는 선지 
+33. 단일행 = 다중행 X
 
 
