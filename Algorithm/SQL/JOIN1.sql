@@ -3,7 +3,8 @@ Q.관리자의 실수로 일부 동물의 입양일이 잘못 입력되었습니
 이때 결과는 보호 시작일이 빠른 순으로 조회해야합니다.
 A. -- 코드를 입력하세요
 SELECT I.ANIMAL_ID, I.NAME
-FROM ANIMAL_INS I, ANIMAL_OUTS O
+FROM ANIMAL_INS I 
+INNER JOIN ANIMAL_OUTS O
 WHERE I.ANIMAL_ID = O.ANIMAL_ID
 AND I.DATETIME < O.DATETIME
 ORDER BY I.DATETIME 
