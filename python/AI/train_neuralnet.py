@@ -6,10 +6,11 @@ import matplotlib.pyplot as plt
 from dataset.mnist import load_mnist
 from two_layer_net import TwoLayerNet
 
+
 # 데이터 읽기
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
 #hidden_size=100 값이 크면 클수록 학습해야 할 것이 늘어나서 즉,무조건 늘어나서 무조건 좋지 않다.
-network = TwoLayerNet(input_size=784, hidden_size=100, output_size=10)
+network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
 
 # 하이퍼파라미터
 iters_num = 10000  # 반복 횟수를 적절히 설정한다.
@@ -22,14 +23,14 @@ train_loss_list = []
 train_acc_list = [] #오류값이 얼마만큼 정확한지
 test_acc_list = [] #검증값이 얼마만큼 정확한지
 
-# 1에폭당 반복 수
+# 1에폭당 반복 수 / 1에폭당 600번 돌기
 iter_per_epoch = max(train_size / batch_size, 1)
 
 for i in range(iters_num):
     # 미니배치 획득          #5만개에 대해서 몇번째 아이를 가져올지 아무거나 뽑는다.
     batch_mask = np.random.choice(train_size, batch_size) #만번을 돌변서
     x_batch = x_train[batch_mask] #임의의 있는 갯수를 가지고 와서t를 만든다.
-    t_batch = t_train[batch_mask]
+    t_batch = t_train[batch_mask] #6만개에서 100개를 
     
     # 기울기 계산
     #grad = network.numerical_gradient(x_batch, t_batch)
@@ -63,3 +64,5 @@ plt.legend(loc='lower right')
 plt.show()
 
 #5만개에 대해서 학습이 되고 결과값이 생성
+#6만개의 데이터를 100개를 갔다가 왔다가
+#09494...를 맞췄어요

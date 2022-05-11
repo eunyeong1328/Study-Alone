@@ -54,7 +54,7 @@ class TwoLayerNet:
         
     def gradient(self, x, t):
         W1, W2 = self.params['W1'], self.params['W2'] #오차난 것에 대해서 목적함수가 낮아지는 함수에 대ㅐ서 
-        b1, b2 = self.params['b1'], self.params['b2']
+        b1, b2 = self.params['b1'], self.params['b2'] #난수로 되어 
         grads = {}
         
         batch_num = x.shape[0]
