@@ -1,6 +1,7 @@
 package chap7;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -9,7 +10,7 @@ public class BufferdOutPutStreamExample {
 		FileInputStream fis = null;
 		FileOutputStream fos = null;
 		BufferedInputStream bis = null;
-		BufferdOutPutStreamExample bos = null;
+		BufferedOutputStream bos = null;
 		
 		int data = -1;
 		long start = 0;
@@ -32,7 +33,7 @@ public class BufferdOutPutStreamExample {
 		fis = new FileInputStream("C:\\Temp\\forest.jpg");
 		bis = new BufferedInputStream(fis);
 		fos = new FileOutputStream("C:\\Temp\\forest2.jpg");
-		bos = new BufferdOutPutStreamExample(fos);
+		bos = new BufferedOutputStream(fos);
 		start  = System.currentTimeMillis();
 		while((data = bis.read())!=-1) {
 			fos.write(data);
