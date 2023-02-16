@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>form exam</h1>
+	<form action="서버주소" method="get/post">
+		<fieldset>
+			<ol>
+				<li>
+					<label>이름</label>
+					<input type = "text" name= "userName" id = "name" 
+					autofocus = "autofocus" placeholder = "ex)홍길동"/><!-- 짧은 도움말 -->
+				</li>
+				<li>
+					<label>이메일</label>
+					<input type = "email" name= "userName"  placeholder = "aa@aa.com"/>
+				</li>
+				<li>
+					<label>날짜</label>
+					<input type = "date"/>
+				</li>
+				<li>
+					<textarea rows="5" cols="60" placeholder="지원동기"></textarea>
+				</li>
+			</ol>
+		</fieldset>
+		<fieldset>
+			<input type = "submit" value = "전송">
+		</fieldset>
+	</form>
+</body>
+</html>
